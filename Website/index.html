@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Website Using HTML And CSS </title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="left-box">
+
+            <div class="wrapper">
+                <img src="logo.png" class="logo">
+
+                <div class="search-box">
+                    <img src="search.png" alt="">
+                    <input type="text" placeholder="Olhe para">
+                </div>
+
+        
+
+                <div class="vertical-line">
+                    <ul>
+                        <li><a href="#"> PRODUÇÃO </a></li>
+                        <li><a href="#"> INSTALAÇÕES </a></li>
+                        <li><a href="#"> MECANISMOS </a></li>
+                        <li><a href="#"> NOSSA EQUIPE </a></li>
+                        <li><a href="#"> NOSSAS IDÉIAS </a></li>
+                    </ul>
+                </div>            
+            </div>
+
+        </div>
+
+        <div class="right-box">
+            <nav>
+                <ul>
+                    <li><a href="#"> COMEÇAR </a></li>
+                    <li><a href="#"> SOBRE NÓS </a></li>
+                    <li><a href="#"> TECNOLOGIA </a></li>
+                    <li><a href="#"> PRODUTOS </a></li>
+                </ul>
+            </nav>
+
+            <h2>A PRÓXIMA <br> GERAÇÃO</h2>
+
+            <div class="robot">
+                <img src="robo.png" alt="">
+                <h1>ROBÓTICA</h1>
+
+                <div class="features">
+                    <div>
+                        <small> PREVIEW </small>
+                        <img src="play.png" alt="">
+                    </div>
+
+                    <div>
+                        <small> A FABRICAÇÃO </small>
+                        <img src="settings.png" alt="">
+                    </div>
+
+                    <div>
+                        <small> BAIXAR PDF </small>
+                        <img src="download.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle"></div>
+
+            <div class="pagination">
+                <ul>
+                    <li>
+                        <a href="#" class="active"> 01 </a>
+                        <a href="#"> 02 </a>
+                        <a href="#"> 03 </a>
+                        <a href="#"> 04 </a>
+                        <a href="#"> 05 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="volume.png" alt="" class="volume">
+
+        </div>
+    </div>
+
+    <div class="smallCursor"></div>
+    <div class="largeCursor"></div>
+
+    <script>
+        var smallCursor = document.querySelector (".smallCursor");
+
+        var largeCursor = document.querySelector (".largeCursor");
+
+
+        document.onmousemove = function(e){
+
+            smallCursor.style.left = (e.pageX - 5) + "px";
+            smallCursor.style.top = (e.pageY - 5) + "px";
+
+            smallCursor.style.display = "block";
+
+
+
+            largeCursor.style.left = (e.pageX - 22) + "px";
+            largeCursor.style.top = (e.pageY - 22) + "px";
+
+            largeCursor.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

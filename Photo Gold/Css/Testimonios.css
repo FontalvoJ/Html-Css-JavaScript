@@ -1,0 +1,338 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+    text-decoration:none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ececec;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --blanco:#f7f7f7;
+	--azul:#43d8c9;
+	--footer:#63b7af;
+	--negro:#100303;
+	--moradoBarra:#c70039;
+	--sombraMorada:	rgba(192, 145, 235, 0.151);
+}
+
+/*MENU*/
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--moradoBarra);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index:9999 ;
+    color: white;
+
+}
+.listMenu > ul>li{
+  margin-right:30px;
+  color: white;
+
+}
+
+/*Submenu*/
+
+.submenu{
+  position:absolute;
+  background:var(--moradoBarra);
+  width:inherit;
+  display:none;
+  padding:15px;
+  color: white;
+}
+.submenu li a{
+  display:block;
+  padding:10px;
+}
+.menu li:hover .submenu{
+  display:block;
+}
+
+.menu .logo {
+    margin-left: 20px;
+}
+
+.menu .logo h1 {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    padding: 40px 30px;
+}
+.menu .listMenu > ul{
+    display: flex;
+    margin-right: 40px;
+}
+
+.menu .listMenu ul li a {
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 300px;
+    /* transition: 0.2s ; */
+}
+
+.menu .listMenu ul li a.activo{
+    border-bottom:2px solid var(--azul);
+    background-color: var(--sombraMorada);
+    border-radius: 3px; 
+    color: white;
+  }
+
+.menu .listMenu ul li a:hover{
+    font-weight: 600; 
+    color:var(--azul);
+    border-bottom:2px dashed var(--azul);
+    /* transition: 0.2s; */
+    /* border-radius: 15px; */
+    /* background-color: rgba(170, 109, 228, 0.205); */
+    /* box-shadow:0px 1px 2px grey; */
+}
+/*Icono*/
+.menu .logo h1 i{
+  color:var(--azul);
+}
+
+
+/*Footer*/
+.logoFooter{
+	padding:20px;
+	width:180px;
+	margin-left:60px;
+	/* margin-top:20px ; */
+	border-radius: 50px ;
+	z-index: 800;
+	/* background-color: white; */
+	
+  }
+  .footer{
+	  width: 100%;
+	  height: auto;
+	  background-color: var(--footer);
+	  color: var(--negro)
+  }
+
+  .sedes{
+	  float:right;
+	  margin-top:30px ;
+	  margin-right: 120px;
+	  font-size: 17px;
+  }
+
+  .datos{
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 15px;
+	margin-top: -100px;
+
+	/* background-color: rgba(192, 145, 235, 0.151); */
+  }
+.datos .title{
+	/* background-color: rgba(0, 0, 0, 0.25); */
+	text-align: center;
+	font-size: 17px;
+}
+  .datos > p{
+	margin:20px 30px 10px;
+	display:inline-block;
+	font-size: 17px;
+
+}
+  .datos > p i{
+	margin-right: 10px;
+}
+  .slogan > p{
+	  font-family: 'Lobster Two', cursive;
+	  font-size: 25px;
+	  text-align: center;	  
+	  color:white;
+	  background-color: rgba(255, 0, 43, 0.479);
+	}
+ 
+  .redes{
+	  margin:0 auto; 
+	  margin-left: 260px;
+  }
+  .redes > span{
+	  display:inline-block; 
+	  margin:20px 70px  ; 
+	  font-size: 25px; 
+  }
+
+  .copyright{
+	  text-align: center;
+	  background-color: rgb(26, 22, 22);
+	  height: 30px;
+	  color: white;
+  }
+
+/*RESTO DE PAGINA*/
+
+  body {
+    background-image: url(../Multimedia/FondoTestimonios.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+
+.Container {
+    width: 100%;
+    max-width: 1200px;
+    height: 550px; /*ALTO DE LA PAGINA CON LAS TARJETAS*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Container .card {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #f7f7f7;
+}
+
+.Container .card:hover {
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px rgb(20, 20, 19);
+}
+
+ 
+.Container .card img {
+    border-radius: 1.5em;
+    padding: 16px;
+    width: 330px;
+    height: 220px;
+    margin-bottom: 10px;
+}
+
+.Container .card h4 {
+    font-weight: 600;
+}
+
+.Container .card p {
+    text-align: justify;
+    padding: 0 3rem;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+
+}
+
+.Container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498;
+}
+.card hr{
+    margin-top:15px;
+}
+
+.card span i{
+    color: var(--moradoBarra);
+    padding: 8px;
+    margin:10px 8px 20px ;
+}
+
+
+/*IMAGEN DE FONDO*/
+
+.OurProject {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 0px;
+    margin-bottom: 700px;
+}
+
+.OurProject .degBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 179.4%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.OurProject .GeneralProject {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.OurProject .ContainerProject {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.OurProject .ContainerProject .ProjectTitle {
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.OurProject .ContainerProject .ProjectTitle h2{
+    font-size: 30px;
+    font-weight: normal;
+    color: #fff
+}
+
+.OurProject .ContainerProject .ProjectTitle hr {
+    background: #fff;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.OurProject .ContainerProject .Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+
+.OurProject .ContainerProject .Container img {
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+ 
+
+.ProjectTitle {
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+}
+

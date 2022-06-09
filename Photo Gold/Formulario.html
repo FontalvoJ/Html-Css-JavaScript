@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/Formulario.css">
+	<link rel="shortcut icon" href="./Multimedia/Favicon.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>PhotoGold-Contacto</title>
+</head>
+<body>
+
+<!--Nav-->
+<nav class="menu">
+    <div class="logo">
+    <h1 class="navLogo"><i class="fa fa-ravelry" aria-hidden="true"></i>
+    PhotoGold</h1>
+    </div>
+
+     <div class="listMenu">
+       <ul>
+         <li><a href="index.html" >Inicio</a></li>
+         <li class="desplegable">Quienes somos
+           <ul class="submenu">
+             <li><a href="Empresa.html">La empresa</a></li>
+             <li><a href="Equipo.html">Nuestro equipo</a></li>
+             <li><a href="Testimonios.html">Testimonios</a></li>
+           </ul>
+         </li>
+         <li><a href="Servicios.html"> Servicios </a></li>
+         <li class="desplegable">Contactanos
+           <ul class="submenu">
+             <li><a href="Contacto.html">Atencion al cliente</a></li>
+             <li><a href="Formulario.html"class="activo">Formulario</a></li>
+            </ul>  
+          </li>
+          <li><a href="Responsabilidad.html" > Responsabilidad Social </a></li>
+       </ul>
+     </div>
+</nav>
+<!--Cierre Nav-->
+
+  
+    <h2 class="h2">Formulario de contacto</h2>
+
+    <div class="formulario">
+
+        <div class="form" id="form1">
+            
+                <input type="text" id="nombre" placeholder="Nombre" class="campo"><br>
+
+                <input type="text" id="Telefono" placeholder="Telefono" class="largo">
+                <input type="text" id="Año nacimiento"placeholder="Año nacimiento" class="largo"><br>
+
+                <input type="text" id="Email"placeholder="Email"class="campo"><br>
+                <input type="text" id="Direccion" placeholder="Direccion"class="campo"><br>
+                <input type="text" id="Asunto" placeholder="Asunto"class="campo"><br>
+
+            <label for="nombre">Escriba su mensaje
+                <textarea name="textarea" rows="10" cols="54"></textarea></label>
+
+                <p><button>Enviar</button></p>
+        </div>
+
+        <div class="form" id="form2">
+
+          
+            <p> De donde eres: <select name="Departamento" id="Departamento"></p>
+              <optgroup label="Colombia">
+              <option value="Antioquia">Antioquia</option>
+              <option value="Cauca">Cauca</option>
+              <option value="Arauca">Arauca</option>
+              <option value="Caldas">Caldas</option>
+              <option value="Guaviare">Guaviare</option>
+              <option value="Chocó">Chocó</option>
+            </optgroup>
+            </select>
+         
+            <p>Otro: <input type="text" name="texto"></p><br>
+
+            <p>Seleccione su rango de edad</p>
+            <p><input type="radio" name="radio"> 18-25 <br>
+              <input type="radio" name="radio"> 25-35 <br>
+              <input type="radio" name="radio"> 35-50 <br>
+              <input type="radio" name="radio"> Mayor de 50 </p><br>
+
+            <p>Cuáles son los servicios de su interes </p>
+            <p><input type="checkbox" name="casilla"> Fotos en foto studio</p>
+            <p><input type="checkbox" name="casilla"> Fotos en exterior</p>
+            <p><input type="checkbox" name="casilla"> Eventos</p>
+            <p><input type="checkbox" name="casilla"> Sección fotografica infantil</p>
+            <p><input type="checkbox" name="casilla"> Personalización de objetos</p>
+            <!-- <p><input type="checkbox" name="casilla"> Portafotos colgantes</p> -->
+            <p>Otro: <input type="text" name="texto"></p><br>
+
+
+        </div>
+
+        <!-- <div class="form" id="form3">
+          <p>A que tipo de cliente pertenece usted</p>
+            <p><input type="radio" name="radio"> Persona natural <br>
+              <input type="radio" name="radio"> Pertenece a una empresa </p><br>
+        
+            <p>
+              <input type="submit" value="Enviar">
+            </p>
+        </div> -->
+
+    </div>
+
+
+  <!--Footer-->
+  <div class="footer">
+    <img src="./Multimedia/Logo.jpg" alt="Logo" class="logoFooter">
+
+    <div class="sedes">
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> Municipio de Carepa</p>
+      <p><i class="fa fa-whatsapp" aria-hidden="true"></i> 3206783297</p>
+      <P>Diagonal 99E #106 C - 84, Barrio Los Pinos</P>
+      <p>Carepa</p>
+    </div>
+
+    <div class="sedes">
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> Localidad de Currulao/ Distrito de Turbo</p>
+      <p><i class="fa fa-whatsapp" aria-hidden="true"></i> 3216789043</p>
+      <P>Diagonal 43E #121 B - 34, Barrio Pueblo Nuevo</P>
+      <p>Currulao</p>
+    </div>
+
+    <div class="datos">
+      <div class="title"><b>Informacion general</b></div>
+      <p><i class="fa fa-phone" aria-hidden="true"></i>Telefono: 8235678</p>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i>Gmail: photoGold@gmail.com</p>
+    </div>
+
+    <div class="slogan">
+      <p>Capturamos emociones con un solo click</p>
+    </div>
+
+    <div class="redes">
+      <span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+      <span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+      <span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
+      <span><i class="fa fa-google-plus-square" aria-hidden="true"></i></span>
+      <span><i class="fa fa-instagram" aria-hidden="true"></i></p></span>
+    </div>
+    
+    <div class="copyright">
+      <p>©PhotoGold - 2019 | Todos los derechos reservados</p>
+    </div>
+  </div>
+
+</body>
+</html>
